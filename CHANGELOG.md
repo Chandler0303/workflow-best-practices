@@ -5,13 +5,13 @@
 ### v1.0.0 (2026-01-17)
 
 #### 初始版本
-- ✅ 创建独立全局 skill `~/.cursor/skills/workflow-template/`
+- ✅ 创建独立全局 skill `~/.cursor/skills/workflow-best-practices/`
 - ✅ 包含 6 个核心 skills 的完整工作流程模板
 - ✅ 创建 SKILL.md、README.md 和参考资料目录
 - ✅ 建立版本记录机制
 
 #### 核心 Skills
-1. **project-coordinator** - 项目总指挥，协调所有 skills 的使用
+1. **project-best-coordinator** - 项目总指挥，协调所有 skills 的使用
 2. **feature-design** - 功能设计，需求分析和功能设计
 3. **project-standards** - 编码规范，编码标准和开发模式
 4. **testing** - 测试指南，测试模式和最佳实践
@@ -27,12 +27,6 @@
   - quick-start.md - 快速开始指南
   - workflow-diagram.md - 工作流程图
 
-#### 迁移历史
-- 2026-01-17: 从项目目录 `docs/workflow-template/` 迁移到全局 skill
-- 2026-01-17: 从 skill-creator 模板目录迁移到独立全局 skill
-- 2026-01-17: 清理多余模板，统一使用全局 skill
-
----
 
 ## 更新指南
 
@@ -43,7 +37,7 @@
    - 测试改进效果
 
 2. **同步改进到全局模板**
-   - 更新 `~/.cursor/skills/workflow-template/` 下的对应文件
+   - 更新 `~/.cursor/skills/workflow-best-practices/` 下的对应文件
    - 更新 CHANGELOG.md 记录改进内容
 
 3. **版本号规则**

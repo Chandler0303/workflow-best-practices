@@ -18,7 +18,7 @@
 
 工作流程模板包含 6 个核心 skills：
 
-1. **project-coordinator** - 项目总指挥
+1. **project-best-coordinator** - 项目总指挥
 2. **feature-design** - 功能设计
 3. **project-standards** - 编码规范
 4. **testing** - 测试指南
@@ -39,9 +39,9 @@
 /skill-creator 创建项目总指挥 skill，用于协调所有 skills 的使用
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 project-coordinator 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 project-best-coordinator 说明
 
-**创建位置**: `.cursor/skills/project-coordinator/`
+**创建位置**: `.cursor/skills/project-best-coordinator/`
 
 ---
 
@@ -51,7 +51,7 @@
 /skill-creator 创建功能设计 skill，用于需求分析和功能设计
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 feature-design 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 feature-design 说明
 
 **创建位置**: `.cursor/skills/feature-design/`
 
@@ -63,7 +63,7 @@
 /skill-creator 创建编码规范 skill，用于编码标准和开发模式
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 project-standards 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 project-standards 说明
 
 **创建位置**: `.cursor/skills/project-standards/`
 
@@ -75,7 +75,7 @@
 /skill-creator 创建测试指南 skill，用于测试模式和最佳实践
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 testing 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 testing 说明
 
 **创建位置**: `.cursor/skills/testing/`
 
@@ -87,7 +87,7 @@
 /skill-creator 创建代码审查 skill，用于代码审查和质量保证
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 code-review 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 code-review 说明
 
 **创建位置**: `.cursor/skills/code-review/`
 
@@ -99,7 +99,7 @@
 /skill-creator 创建问题排查 skill，用于调试和问题排查
 ```
 
-**参考**: `~/.cursor/skills/workflow-template/` 中的 debugging 说明
+**参考**: `~/.cursor/skills/workflow-best-practices/` 中的 debugging 说明
 
 **创建位置**: `.cursor/skills/debugging/`
 
@@ -109,7 +109,7 @@
 
 根据项目特点，自定义每个 skill 的内容：
 
-1. **查看全局模板**: `~/.cursor/skills/workflow-template/references/`
+1. **查看全局模板**: `~/.cursor/skills/workflow-best-practices/references/`
 2. **调整项目特定内容**:
    - 更新编码规范（技术栈、框架版本）
    - 添加项目特定的测试模式
@@ -127,7 +127,7 @@
 在 Cursor 中测试每个 skill：
 
 ```
-/project-coordinator 我应该使用哪个 skill 来设计新功能？
+/project-best-coordinator 我应该使用哪个 skill 来设计新功能？
 /feature-design 分析这个需求：[描述需求]
 /project-standards 如何在这个项目中组织组件代码？
 /testing 如何为这个组件编写测试？
@@ -143,7 +143,7 @@
 项目根目录/
 ├── .cursor/
 │   └── skills/
-│       ├── project-coordinator/
+│       ├── project-best-coordinator/
 │       ├── feature-design/
 │       ├── project-standards/
 │       ├── testing/
@@ -160,7 +160,7 @@
 
 **新功能开发**:
 ```
-1. /project-coordinator → 确定使用 feature-design
+1. /project-best-coordinator → 确定使用 feature-design
 2. /feature-design → 分析需求，设计方案
 3. /project-standards → 实现功能
 4. /testing → 编写测试
@@ -177,7 +177,7 @@
 
 ### 5.2 使用技巧
 
-1. **从 project-coordinator 开始**: 不确定时，先问总指挥
+1. **从 project-best-coordinator 开始**: 不确定时，先问总指挥
 2. **查看参考资料**: 每个 skill 都有详细的 references
 3. **记录设计决策**: 使用 feature-design 记录重要决策
 4. **持续改进**: 在使用过程中优化 skills
@@ -189,7 +189,7 @@
 ### Q: 可以跳过某些 skill 吗？
 
 A: 可以，但建议至少创建：
-- project-coordinator（总指挥）
+- project-best-coordinator（总指挥）
 - project-standards（编码规范）
 - code-review（代码审查）
 
@@ -229,7 +229,7 @@ A: 使用全局目录下的 git-workflow skill：
 
 ## 获取帮助
 
-- **模板文档**: `~/.cursor/skills/workflow-template/README.md`
-- **Skills 总结**: `~/.cursor/skills/workflow-template/references/skills-summary.md`
-- **工作流程图**: `~/.cursor/skills/workflow-template/references/workflow-diagram.md`
-- **版本记录**: `~/.cursor/skills/workflow-template/CHANGELOG.md`
+- **模板文档**: `~/.cursor/skills/workflow-best-practices/README.md`
+- **Skills 总结**: `~/.cursor/skills/workflow-best-practices/references/skills-summary.md`
+- **工作流程图**: `~/.cursor/skills/workflow-best-practices/references/workflow-diagram.md`
+- **版本记录**: `~/.cursor/skills/workflow-best-practices/CHANGELOG.md`

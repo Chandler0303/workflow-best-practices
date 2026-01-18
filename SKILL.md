@@ -1,15 +1,15 @@
 ---
-name: workflow-template
+name: workflow-best-practices
 description: Automatically generates a complete workflow skills system for new projects. Use when setting up a new project, initializing skills, or creating a standardized development workflow. Analyzes project structure and automatically creates 6 core skills customized for the project.
 ---
 
-# Workflow Template - Auto Generator
+# Workflow Best Practices - Auto Generator
 
 This skill automatically generates a complete workflow skills system for your project. It analyzes your project structure, technology stack, and patterns, then creates 6 customized skills that match your project's needs.
 
 ## What This Skill Does
 
-When you use `/workflow-template` in a new project, this skill will:
+When you use `/workflow-best-practices` in a new project, this skill will:
 
 1. **Analyze your project structure**
    - Read `package.json` to identify technology stack
@@ -17,7 +17,7 @@ When you use `/workflow-template` in a new project, this skill will:
    - Identify key frameworks and tools
 
 2. **Automatically generate 6 core skills**
-   - `project-coordinator` - Project coordinator and workflow orchestrator
+   - `project-best-coordinator` - Project coordinator and workflow orchestrator
    - `feature-design` - Requirements analysis and feature design
    - `project-standards` - Coding standards and development patterns
    - `testing` - Testing patterns and best practices
@@ -34,13 +34,13 @@ When you use `/workflow-template` in a new project, this skill will:
 Simply use the command in your project:
 
 ```
-/workflow-template
+/workflow-best-practices
 ```
 
 Or be more specific:
 
 ```
-/workflow-template 为这个项目生成完整的工作流程 skills
+/workflow-best-practices 为这个项目生成完整的工作流程 skills
 ```
 
 ## Automatic Generation Process
@@ -97,9 +97,9 @@ Each skill is customized based on:
 
 ## Generated Skills Details
 
-### 1. project-coordinator
+### 1. project-best-coordinator
 
-**Location**: `.cursor/skills/project-coordinator/`
+**Location**: `.cursor/skills/project-best-coordinator/`
 
 **Customization**:
 - Routes tasks to other 5 skills
@@ -155,7 +155,7 @@ Each skill is customized based on:
 
 ## Implementation Instructions
 
-**CRITICAL**: When a user invokes `/workflow-template`, you MUST automatically generate all 6 skills. Do NOT just provide instructions - actually create them.
+**CRITICAL**: When a user invokes `/workflow-best-practices`, you MUST automatically generate all 6 skills. Do NOT just provide instructions - actually create them.
 
 ### Step 1: Analyze Project (REQUIRED)
 
@@ -199,7 +199,7 @@ You MUST automatically generate all 6 skills in this order. For EACH skill:
 
 **Generation Order**:
 ```
-1. project-coordinator (first - coordinates others)
+1. project-best-coordinator (first - coordinates others)
 2. project-standards (foundation - others reference this)
 3. feature-design
 4. testing
@@ -219,11 +219,11 @@ For EACH skill, you MUST customize:
 
 ### Step 4: Execution
 
-When user says `/workflow-template` or `/workflow-template 为这个项目生成完整的工作流程 skills`:
+When user says `/workflow-best-practices` or `/workflow-best-practices 为这个项目生成完整的工作流程 skills`:
 
 1. ✅ Read package.json (REQUIRED)
 2. ✅ Analyze project structure (REQUIRED)
-3. ✅ Generate project-coordinator skill (AUTOMATIC)
+3. ✅ Generate project-best-coordinator skill (AUTOMATIC)
 4. ✅ Generate project-standards skill (AUTOMATIC)
 5. ✅ Generate feature-design skill (AUTOMATIC)
 6. ✅ Generate testing skill (AUTOMATIC)
@@ -246,7 +246,7 @@ When generating, follow this process for EACH skill:
 
 For each skill, you should:
 
-1. **Read the template** from `~/.cursor/skills/workflow-template/references/skills-summary.md`
+1. **Read the template** from `~/.cursor/skills/workflow-best-practices/references/skills-summary.md`
 2. **Customize based on project analysis**:
    - Replace generic technology stack with actual versions
    - Replace example patterns with real project patterns
@@ -294,7 +294,7 @@ Once all skills are generated:
 
 ## References
 
-- **Template Location**: `~/.cursor/skills/workflow-template/`
+- **Template Location**: `~/.cursor/skills/workflow-best-practices/`
 - **Skills Summary**: See [references/skills-summary.md](references/skills-summary.md)
 - **Quick Start Guide**: See [references/quick-start.md](references/quick-start.md)
 - **Workflow Diagram**: See [references/workflow-diagram.md](references/workflow-diagram.md)

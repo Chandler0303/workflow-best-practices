@@ -6,7 +6,7 @@
 
 ## 核心 Skills 详细说明
 
-### 1. project-coordinator (项目总指挥)
+### 1. project-best-coordinator (项目总指挥)
 
 **职责**: 项目协调和工作流程编排
 
@@ -21,7 +21,7 @@
 - 工作流程协调：确保 skills 按正确顺序使用
 - 技能选择指导：帮助选择最合适的 skill
 
-**参考文档**: `.cursor/skills/project-coordinator/`
+**参考文档**: `.cursor/skills/project-best-coordinator/`
 
 ---
 
@@ -141,7 +141,7 @@
 ### 典型开发流程
 
 ```
-1. project-coordinator
+1. project-best-coordinator
    └─> 确定任务类型，路由到合适的 skill
 
 2. feature-design
@@ -168,7 +168,7 @@
 | Bug 修复 | debugging → project-standards | testing, code-review |
 | 代码审查 | code-review | project-standards |
 | 性能优化 | debugging → project-standards | testing |
-| 需求分析 | feature-design | project-coordinator |
+| 需求分析 | feature-design | project-best-coordinator |
 | 测试编写 | testing | project-standards |
 
 ---
@@ -176,7 +176,7 @@
 ## Skills 依赖关系
 
 ```
-project-coordinator (总指挥)
+project-best-coordinator (总指挥)
     │
     ├─> feature-design (需求设计)
     │       └─> project-standards (实现)
@@ -193,8 +193,8 @@ project-coordinator (总指挥)
 
 ## 最佳实践
 
-### 1. 始终从 project-coordinator 开始
-- 不确定使用哪个 skill 时，先使用 project-coordinator
+### 1. 始终从 project-best-coordinator 开始
+- 不确定使用哪个 skill 时，先使用 project-best-coordinator
 - 它会帮你路由到正确的 skill
 
 ### 2. 按流程顺序使用
